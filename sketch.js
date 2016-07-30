@@ -52,7 +52,7 @@ function draw() {
   
   //if (mouseIsPressed) {
       //image (night,mouseX, mouseY,windowWidth,windowHeight) 
-    }
+    
   
   image(street,0,0,windowWidth,windowHeight)
   //background image drawn once in the back so will not draw over the the people
@@ -76,13 +76,13 @@ function draw() {
     image(images[i%8],x[i],y[i],w[i],h[i])
     //tint[i](images,255,126)
     
-    
+  }
       
       
     }  
     
   }  
-  } 
+  
   
 
         
