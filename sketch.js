@@ -20,6 +20,8 @@ function setup() {
   song.loop()
   song.setVolume (0.5)
   
+    song.play()
+  
   images = [ //loading as an array
     loadImage("assets/g1.png"), 
     loadImage("assets/g2.png"),  
@@ -48,7 +50,7 @@ for (var i=0;i<100;i=i+1) {
 } 
 function draw() {
   
-  song.play()
+
   
   //if (mouseIsPressed) {
       //image (night,mouseX, mouseY,windowWidth,windowHeight) 
@@ -66,7 +68,7 @@ function draw() {
     x[i]=x[i]+random(-10,10) //+implies movement
     y[i]=y[i]+random(-10,10) //higher # will move by less
     image(images[i%8],x[i],y[i],w[i],h[i]) //drawing the array
-    //      modulo            x   y   w   h
+    //        modulo      x   y   w   h
            //will stay betwwen 0 and 8 parameters and keep looping through because there are 8 images
    
     
